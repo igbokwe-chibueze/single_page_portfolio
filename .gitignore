@@ -8,6 +8,7 @@
 
 # testing
 /coverage
+/trash
 
 # next.js
 /.next/

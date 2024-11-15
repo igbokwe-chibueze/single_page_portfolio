@@ -4,6 +4,7 @@ import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 
+
 const testimonials = [
   {
     name: "Alex Turner",
@@ -37,6 +38,10 @@ const testimonials = [
   },
 ];
 
-export const TestimonialsSection = () => {
-  return <div>Testimonials Section</div>;
-};
+const Testimonials = () => {
+  return (
+    <div>Testimonials</div>
+  )
+}
+
+export default Testimonials

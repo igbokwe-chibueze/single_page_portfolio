@@ -41,6 +41,10 @@ const portfolioProjects = [
   },
 ];
 
-export const ProjectsSection = () => {
-  return <div>Projects Section</div>;
-};
+const Projects = () => {
+  return (
+    <div>Projects</div>
+  )
+}
+
+export default Projects

@@ -1,3 +1,9 @@
-export const AboutSection = () => {
-  return <div>About Section</div>;
-};
+import React from 'react'
+
+const About = () => {
+  return (
+    <div>About</div>
+  )
+}
+
+export default About
