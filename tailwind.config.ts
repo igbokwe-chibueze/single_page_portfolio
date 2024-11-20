@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -27,6 +28,19 @@ const config: Config = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        ".mask-image-gradient-vertical": {
+          maskImage: "linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)",
+          WebkitMaskImage: "linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)",
+        },
+        ".mask-image-gradient-horizontal": {
+          maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+          WebkitMaskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+        },
+      });
+    }),
+  ],
 };
 export default config;
