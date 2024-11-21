@@ -5,6 +5,8 @@ import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
 import grainImage from '@/assets/images/grain.jpg'
+import SectionHearder from "@/components/SectionHearder";
+import Card from "@/components/Card";
 
 const portfolioProjects = [
   {
@@ -49,32 +51,16 @@ const Projects = () => {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container">
-        <div className="flex justify-center">
-          <p 
-            className=" uppercase font-semibold tracking-wide 
-            bg-gradienst-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center"
-          >
-            Real-world Results
-          </p>
-        </div>
-        <h2 className=" font-serif text-3xl text-center md:text-5xl mt-6">Featured Projects</h2>
-        <p className=" text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto"
-        >See how i transformed concepts into engaging digital experences. </p>
+        <SectionHearder eyebrow="Real-world Results" title="Featured Projects" 
+          description="See how i transformed concepts into engaging digital experences."
+        />
 
         <div className=" mt-10 md:mt-20 flex flex-col gap-20">
           {portfolioProjects.map((project)=>(
-            <div 
-              key={project.title} 
-              className=" bg-gray-800 rounded-3xl relative overflow-hidden z-0 after:z-10 
-              after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 
-              after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 after:pointer-events-none"
+            <Card
+              key={project.title}
+              className="p-0 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
             >
-              {/* Card Grain Background */}
-              <div className='absolute inset-0 -z-10 opacity-5' style={{
-                backgroundImage: `url(${grainImage.src})`
-                }}>
-              </div>
-
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div 
@@ -117,10 +103,8 @@ const Projects = () => {
                     lg:absolute lg:h-full lg:w-auto lg:max-w-none"
                   />
                 </div>
-
               </div>
-
-            </div>
+            </Card>
           ))}
         </div>
       </div>
