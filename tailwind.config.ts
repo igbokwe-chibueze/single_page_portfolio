@@ -39,6 +39,10 @@ const config: Config = {
           maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
           WebkitMaskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
         },
+        ".mask-image-radial-gradient": {
+          maskImage: "radial-gradient(ellipse at bottom center, black, transparent)",
+          WebkitMaskImage: "radial-gradient(ellipse at bottom center, black, transparent)",
+        },
       });
     }),
   ],
