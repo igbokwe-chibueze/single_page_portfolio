@@ -1,6 +1,5 @@
 import Card from '@/components/Card'
 import SectionHearder from '@/components/SectionHearder'
-import StarIcon from '@/assets/icons/star.svg'
 import BookImage from '@/assets/images/book-cover.png'
 import Image from 'next/image'
 import JavascriptIcon from '@/assets/icons/square-js.svg'
