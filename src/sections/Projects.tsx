@@ -55,10 +55,13 @@ const Projects = () => {
         />
 
         <div className=" mt-10 md:mt-20 flex flex-col gap-20">
-          {portfolioProjects.map((project)=>(
+          {portfolioProjects.map((project, index)=>(
             <Card
               key={project.title}
-              className="p-0 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
+              className="p-0 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-16"
+              style= {{
+                top: `calc(64px + ${index * 50}px`
+              }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
