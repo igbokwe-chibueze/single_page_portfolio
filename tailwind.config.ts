@@ -33,15 +33,19 @@ const config: Config = {
             opacity: '0',
           }
         },
-        
         wiggle: {
           '0%, 100%': { transform: 'rotate(-3deg)' },
           '50%': { transform: 'rotate(3deg)' },
+        },
+        'move-left': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
         }
       },
       animation: {
         'ping-large': "ping-large 1s ease-in-out infinite",
-        wiggle: 'wiggle 1s ease-in-out infinite'
+        wiggle: 'wiggle 1s ease-in-out infinite',
+        'move-left': 'move-left 1s linear infinite',
       }
     },
   },
