@@ -25,6 +25,23 @@ const config: Config = {
       fontFamily : {
         sans: "var(--font-sans)",
         serif: "var(--font-serif)",
+      },
+      keyframes: {
+        'ping-large': {
+          '75%, 100%': {
+            transform: 'scale(3)',
+            opacity: '0',
+          }
+        },
+        
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      },
+      animation: {
+        'ping-large': "ping-large 1s ease-in-out infinite",
+        wiggle: 'wiggle 1s ease-in-out infinite'
       }
     },
   },
