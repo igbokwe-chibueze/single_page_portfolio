@@ -42,8 +42,8 @@ const config: Config = {
           '100%': { transform: 'translateX(-50%)' },
         },
         'move-right': {
-          '0%': { transform: 'translateX(-50)' },
-          '100%': { transform: 'translateX(0%)' },
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' },
         },
       },
       animation: {
